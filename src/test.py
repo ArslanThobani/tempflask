@@ -8,7 +8,7 @@ import openai
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = "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"
+openai.api_key = os.environ['apikey']
 bo = None
 
 class BusinessObject:
